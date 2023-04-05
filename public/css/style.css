@@ -1,0 +1,71 @@
+:root{
+    --pink: #e84393;
+    --biru: #2188ce;
+    --birutua: #28397d;
+}
+
+*{    
+    box-sizing: border-box;        
+}
+
+.bg-danger{
+    background: linear-gradient(to right, #28397d, #2188ce) !important;  
+    height: 4.4rem !important;    
+    box-shadow: 0 2px rgba(0,0,0,0.1),
+    0 2px rgba(0,0,0,0.1),
+    0 3px rgba(0,0,0,0.1),
+    0 4px rgba(0,0,0,0.1);
+}
+
+
+.offcanvas-body{        
+    position: absolute;
+    margin-left: 10%;        
+    margin-top: 4px;
+}
+
+#navbarNav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.nav-menu > ul {
+    display: flex;
+}
+
+li a #user{
+    font-size: large;
+    color: white;
+    margin-top: 8px;
+}
+
+
+
+
+/* content Image */
+.home{            
+    position: absolute;    
+    right: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;    
+}
+
+.home .content{
+    position: relative;    
+    max-width: 100%;    
+    overflow: hidden;
+    z-index: -1;
+}
+
+.home .content img{    
+    position: relative;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
