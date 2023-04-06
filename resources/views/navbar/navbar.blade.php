@@ -29,11 +29,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 {{ $title === 'Blog' ? 'active' : '' }}" href="/">Blog -Sub
-                            Cat<i class="blog"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3 {{ $title === 'About' ? 'active' : '' }}" href="/about"><i class="about"></i>About</a>
+                        <a class="nav-link mx-3 {{ $title === 'Blog' ? 'active' : '' }}" href="/">Blog<i class="blog"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-3 {{ $title === 'Good' ? 'active' : '' }}" href="/about"><i class="good"></i>Good News</a>
@@ -41,6 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link mx-3 {{ $title === 'Categories' ? 'active' : '' }}"
                             href="/categories"><i class="service"></i>Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 {{ $title === 'About' ? 'active' : '' }}" href="/about"><i class="about"></i>About</a>
                     </li>
                 </ul>
             </div>
