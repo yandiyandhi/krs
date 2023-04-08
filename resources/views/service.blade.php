@@ -1,4 +1,4 @@
 @extends('mainlayout.main')
 @section('content')
-   <h1>About</h1>
+   <h1>Service</h1>
 @endsection

@@ -3,7 +3,7 @@
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Goodnews;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,8 +20,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [NavbarController::class, 'home']);
-//Route::get('/about', [NavbarController::class, 'about']);
-
+Route::get('/blog', [NavbarController::class, 'blog']);
+Route::get('/goodnews', [NavbarController::class, 'goodnews']);
+Route::get('/service', [NavbarController::class, 'service']);
+Route::get('/about', [NavbarController::class, 'about']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
