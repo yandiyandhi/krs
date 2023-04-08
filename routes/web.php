@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\NavbarController;
-use App\Http\Controllers\navcontroller;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
