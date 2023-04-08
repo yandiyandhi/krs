@@ -12,7 +12,7 @@ class GoodnewsController extends Controller
         return view('goodnews', [
             'title' => 'Good News',
             'active' => 'goodnews',
+            'status' => 'good',
         ]);
     }
-
 }
