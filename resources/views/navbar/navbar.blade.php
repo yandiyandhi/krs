@@ -29,14 +29,21 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 {{ $title === 'Blog' ? 'active' : '' }}" href="/">Blog<i class="blog"></i></a>
+                        <a class="nav-link mx-3 {{ $title === 'Blog' ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="about"></i>Blog</a>
+                          </a>
+                        
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Programming</a></li>
+                            <li><a class="dropdown-item" href="#">Google Workspace</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 {{ $title === 'Good' ? 'active' : '' }}" href="/about"><i class="good"></i>Good News</a>
+                        <a class="nav-link mx-3 {{ $title === 'Good News' ? 'active' : '' }}" href="/goodnews"><i class="good"></i>Good News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 {{ $title === 'Categories' ? 'active' : '' }}"
-                            href="/categories"><i class="service"></i>Service</a>
+                        <a class="nav-link mx-3 {{ $title === 'Service' ? 'active' : '' }}" href="/service"><i class="service"></i>Service</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-3 {{ $title === 'About' ? 'active' : '' }}" href="/about"><i class="about"></i>About</a>
