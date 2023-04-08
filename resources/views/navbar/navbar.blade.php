@@ -29,6 +29,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
+<<<<<<< HEAD
+                        <a class="nav-link mx-3 {{ $title === 'Blog' ? 'active' : '' }}" href="/">Blog<i
+                                class="blog"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 {{ $title === 'Good' ? 'active' : '' }}" href="/about"><i
+                                class="good"></i>Good News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 {{ $title === 'Categories' ? 'active' : '' }}" href="/categories"><i
+                                class="service"></i>Service</a>
+=======
                         <a class="nav-link mx-3 {{ $title === 'Blog' ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="about"></i>Blog</a>
                           </a>
@@ -44,9 +56,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-3 {{ $title === 'Service' ? 'active' : '' }}" href="/service"><i class="service"></i>Service</a>
+>>>>>>> a428698be742a5b05a4f6e9c6c9da1a56f282af4
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 {{ $title === 'About' ? 'active' : '' }}" href="/about"><i class="about"></i>About</a>
+                        <a class="nav-link mx-3 {{ $title === 'About' ? 'active' : '' }}" href="/about"><i
+                                class="about"></i>About</a>
                     </li>
                 </ul>
             </div>
@@ -77,11 +91,63 @@
                             </ul>
                         </li>
                     @else
-                        <li class="nav-item">
-                            <a href="/login" class="nav-link {{ $title === 'Login' ? 'active' : '' }}"></i>
-                                <ion-icon name="person" id="user"></ion-icon>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-transparent border-0" data-bs-toggle="modal"
+                            data-bs-target="#collogin">
+                            <a href="#" class="nav-link fs-5 {{ $title === 'Login' ? 'active' : '' }}">
+                                <ion-icon name="person" id="user" style="color: #fff"></ion-icon>
                             </a>
-                        </li>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="collogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content d-flex">
+                                    <div class="d-flex justify-content-end p-2">
+                                        <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex mt-10">
+                                        <div class="container" id="container">
+                                            <div class="form-container sign-up-container">
+                                                <form action="#">
+                                                    <h2>Buat Akun</h2>
+                                                    <input type="text" placeholder="Name">
+                                                    <input type="email" placeholder="Email">
+                                                    <input type="password" placeholder="Password">
+                                                    <input type="password" placeholder="Konfirmasi Password">
+                                                    <button>Sign Up</button>
+                                                </form>
+                                            </div>
+                                            <div class="form-container sign-in-container">
+                                                <form action="#">
+                                                    <h1>Masuk</h1>
+                                                    <input type="email" placeholder="Email">
+                                                    <input type="password" placeholder="Password">
+                                                    <a href="">Lupa password ?</a>
+                                                    <button>Sign In</button>
+                                                </form>
+                                            </div>
+                                            <div class="overlay-container">
+                                                <div class="overlay">
+                                                    <div class="overlay-panel overlay-left">
+                                                        <h2>Halo Sobat Koorsus</h2>
+                                                        <p>Silahkan masuk dengan akun anda</p>
+                                                        <button class="press" id="signin">Sign In</button>
+                                                    </div>
+                                                    <div class="overlay-panel overlay-right">
+                                                        <h2>Welcome Back</h2>
+                                                        <p>Silahkan daftar dengan email anda</p>
+                                                        <button class="press" id="signup">Sign Up</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     @endauth
                 </ul>
             </div>

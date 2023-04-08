@@ -2,64 +2,69 @@
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus {    
+.navbar-toggler-icon:focus {
     outline: none;
     border: none;
-    box-shadow: none;    
+    box-shadow: none;
 }
 
-.offcanvas.offcanvas-start.show #navbarNav{        
+.offcanvas.offcanvas-start.show #navbarNav {
     position: absolute;
-    left: -10%;    
+    left: -10%;
     width: 100%;
     height: 100%;
-    margin-top: 69px;        
+    margin-top: 69px;
 }
 
 .offcanvas.offcanvas-start.show #navbarNav ul li {
     width: 100%;
-    padding: 0px 10px;    
-}   
+    padding: 0px 10px;
+}
 
-.offcanvas.offcanvas-start.show #navbarNav ul li a{       
-    position: relative;    
+.offcanvas.offcanvas-start.show #navbarNav ul li a {
+    position: relative;
     width: 125px;
     color: #000;
     left: 0;
     font-weight: 400;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
 }
 
 
-.offcanvas.offcanvas-start.show #navbarNav ul li a:hover{                    
-    color: #2188ce;    
+.offcanvas.offcanvas-start.show #navbarNav ul li a:hover {
+    color: #2188ce;
 }
 
-@media (max-width:990px){    
-    div[class="container"]{        
+@media (max-width:990px) {
+    div[class="container"] {
         height: 100px;
         margin-top: -7px;
     }
+
     a[class="navbar-brand"] {
-        display: flex;        
+        display: flex;
         position: relative;
         height: 70px;
         margin-top: -17px;
     }
-    .container .navbar-brand div img{                
+
+    .container .navbar-brand div img {
         display: flex;
         position: absolute;
-        max-height: 80px; 
+        max-height: 80px;
         max-width: 180px;
-        margin-top: -9px !important;        
+        margin-top: -9px !important;
     }
-    button[class="navbar-toggler"]{
+
+    button[class="navbar-toggler"] {
         position: relative;
         margin-top: -30px;
     }
-    .offcanvas{        
-        max-width: 50%;        
+
+    .offcanvas {
+        max-width: 50%;
     }
+
     .offcanvas span {
         position: absolute;
         border: 1.5px solid #444;
@@ -67,46 +72,71 @@
         left: 0px;
         height: 0.5px;
         margin-top: 50px;
-        box-shadow: 0 1px rgba(0,0,0,0.1), 
-        0 2px rgba(0,0,0,0.1),
-        0 2px rgba(0,0,0,0.1);
+        box-shadow: 0 1px rgba(0, 0, 0, 0.1),
+            0 2px rgba(0, 0, 0, 0.1),
+            0 2px rgba(0, 0, 0, 0.1);
     }
-    .btn-close{
+
+    .btn-close {
         visibility: hidden;
     }
 
-    .offcanvas .offcanvas-header{
-        position: absolute;        
+    .offcanvas .offcanvas-header {
+        position: absolute;
         width: 100%;
     }
 
-    .offcanvas .offcanvas-header .navbar-brand{        
-        position: relative;                
+    .offcanvas .offcanvas-header .navbar-brand {
+        position: relative;
         width: 100%;
     }
 
-    .offcanvas .offcanvas-header .navbar-brand .image{        
-        position: absolute;                
+    .offcanvas .offcanvas-header .navbar-brand .image {
+        position: absolute;
         width: 100%;
     }
 
-    .offcanvas .offcanvas-header .navbar-brand img{
+    .offcanvas .offcanvas-header .navbar-brand img {
         position: relative;
         display: flex;
         margin-top: -1px !important;
         left: 25%;
         transition: 0.3s;
     }
+
+    .content {
+        margin-top: -100%;
+        transition: all .3s;
+    }
+
+    .services {
+        width: 36% !important;
+        font-size: 14px;
+    }
+
+    .sosial {
+        width: 23% !important;
+        font-size: 14px;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service i {
+        font-size: 17px !important;
+    }
 }
 
-@media (max-width:760px){    
-    button[class="navbar-toggler"]{
+@media (max-width:760px) {
+    button[class="navbar-toggler"] {
         position: relative;
         margin-top: -30px;
     }
 
-    .offcanvas{                
-        max-width: 50%;        
+    .offcanvas {
+        max-width: 50%;
     }
 
     .offcanvas span {
@@ -116,43 +146,73 @@
         left: 0px;
         height: 0.5px;
         margin-top: 70px;
-        box-shadow: 0 1px rgba(0,0,0,0.1), 
-        0 2px rgba(0,0,0,0.1),
-        0 2px rgba(0,0,0,0.1);
+        box-shadow: 0 1px rgba(0, 0, 0, 0.1),
+            0 2px rgba(0, 0, 0, 0.1),
+            0 2px rgba(0, 0, 0, 0.1);
     }
 
-    .btn-close{
+    .btn-close {
         visibility: hidden;
     }
 
-    .offcanvas .offcanvas-header{
-        position: absolute;                                
+    .offcanvas .offcanvas-header {
+        position: absolute;
         width: 100%;
         height: 70px;
     }
 
-    .offcanvas .offcanvas-header .navbar-brand{        
-        position: absolute;                   
-        left: 0;                     
-        width: 100%;        
+    .offcanvas .offcanvas-header .navbar-brand {
+        position: absolute;
+        left: 0;
+        width: 100%;
     }
 
-    .offcanvas .offcanvas-header .navbar-brand .image{        
-        position: absolute;                         
-        width: 100%;        
-        height: 100%;        
+    .offcanvas .offcanvas-header .navbar-brand .image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
         margin-top: 2px;
-        display: flex ;
-        justify-content: center ;
-        align-items: center ;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .offcanvas .offcanvas-header .navbar-brand img{               
+
+    .offcanvas .offcanvas-header .navbar-brand img {
         position: absolute;
         left: 25%;
         right: 20%;
         width: calc(100% - 50%);
-        height: auto;         
+        height: auto;
         transition: 0.3s;
+    }
+
+    .content {
+        margin-top: -140%;
+        transition: all .3s;
+    }
+
+    .services {
+        width: 36% !important;
+        font-size: 14px;
+    }
+
+    .sosial {
+        width: 23% !important;
+        font-size: 14px;
+    }
+
+    .sercont {
+        border: 1px solid red;
+        height: fit-content;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service i {
+        font-size: 17px !important;
     }
 }
 
@@ -167,158 +227,158 @@
 
 
 /* Line Color Navbar */
-.offcanvas-body ul li a{
-    position: relative;      
+.offcanvas-body ul li a {
+    position: relative;
     font-size: .9em;
-    letter-spacing: 0.1em;  
-    color: #fff;  
-}
-
-.offcanvas-body ul li a:hover{
+    letter-spacing: 0.1em;
     color: #fff;
 }
 
-.offcanvas-body ul li a i.home{
+.offcanvas-body ul li a:hover {
+    color: #fff;
+}
+
+.offcanvas-body ul li a i.home {
     position: absolute;
     display: block;
 }
 
-.offcanvas-body ul li a i.home::before{
-    content: '';
-    position: absolute;
-    left: 8px;
-    top: 6px;
-    height: 2px;
-    width: 5px;
-    background: #fff;    
-    transition: 0.3s;
-    visibility: hidden;
-}
-
-.offcanvas-body ul li a:hover i.home::before{    
-    visibility: visible;
-    width: 45px;
-    right: 100%;
-    color: #fff;  
-}
-
-.offcanvas-body ul li a i.blog{
-    position: absolute;
-    display: block;
-}
-
-.offcanvas-body ul li a i.blog::before{
+.offcanvas-body ul li a i.home::before {
     content: '';
     position: absolute;
     left: 1px;
     top: 6px;
     height: 2px;
     width: 5px;
-    background: #fff;    
+    background: #fff;
     transition: 0.3s;
     visibility: hidden;
 }
 
-.offcanvas-body ul li a:hover i.blog::before{    
-    visibility: visible;
-    width: 115px;
-    right: 100%;
-}
-
-.offcanvas-body ul li a i.about{
-    position: absolute;
-    display: block;    
-}
-
-.offcanvas-body ul li a i.about::before{    
-    content: '';
-    position: absolute;
-    left: 1px;
-    top: 28px;
-    height: 2px;
-    width: 5px;
-    background: #fff;        
-    transition: 0.3s;
-    visibility: hidden;
-}
-
-.offcanvas-body ul li a:hover i.about::before{    
+.offcanvas-body ul li a:hover i.home::before {
     visibility: visible;
     width: 45px;
     right: 100%;
+    color: #fff;
 }
 
-.offcanvas-body ul li a i.good{
+.offcanvas-body ul li a i.blog {
     position: absolute;
-    display: block;    
+    display: block;
 }
 
-.offcanvas-body ul li a i.good::before{    
+.offcanvas-body ul li a i.blog::before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 6px;
+    height: 2px;
+    width: 5px;
+    background: #fff;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.offcanvas-body ul li a:hover i.blog::before {
+    visibility: visible;
+    width: 34px;
+    right: 100%;
+}
+
+.offcanvas-body ul li a i.about {
+    position: absolute;
+    display: block;
+}
+
+.offcanvas-body ul li a i.about::before {
     content: '';
     position: absolute;
     left: 1px;
     top: 28px;
     height: 2px;
     width: 5px;
-    background: #fff;        
+    background: #fff;
     transition: 0.3s;
     visibility: hidden;
 }
 
-.offcanvas-body ul li a:hover i.good::before{    
+.offcanvas-body ul li a:hover i.about::before {
+    visibility: visible;
+    width: 47px;
+    right: 100%;
+}
+
+.offcanvas-body ul li a i.good {
+    position: absolute;
+    display: block;
+}
+
+.offcanvas-body ul li a i.good::before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 28px;
+    height: 2px;
+    width: 5px;
+    background: #fff;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.offcanvas-body ul li a:hover i.good::before {
     visibility: visible;
     width: 93px;
     right: 100%;
 }
 
-.offcanvas-body ul li a i.service{
+.offcanvas-body ul li a i.service {
     position: absolute;
-    display: block;    
+    display: block;
 }
 
-.offcanvas-body ul li a i.service::before{    
+.offcanvas-body ul li a i.service::before {
     content: '';
     position: absolute;
     left: 1px;
     top: 28px;
     height: 2px;
     width: 5px;
-    background: #fff;        
+    background: #fff;
     transition: 0.3s;
     visibility: hidden;
 }
 
-.offcanvas-body ul li a:hover i.service::before{    
+.offcanvas-body ul li a:hover i.service::before {
     visibility: visible;
     width: 63px;
     right: 100%;
 }
 
-.offcanvas-body ul li a.nav-link.active i.home::before{
+.offcanvas-body ul li a.nav-link.active i.home::before {
     visibility: visible;
-    width: 45px;    
+    width: 45px;
     right: 100%;
 }
 
-.offcanvas-body ul li a.nav-link.active i.blog::before{
+.offcanvas-body ul li a.nav-link.active i.blog::before {
+    visibility: visible;
+    width: 34px;
+    right: 100%;
+}
+
+.offcanvas-body ul li a.nav-link.active i.about::before {
+    visibility: visible;
+    width: 47px;
+    right: 100%;
+}
+
+.offcanvas-body ul li a.nav-link.active i.good::before {
     visibility: visible;
     width: 115px;
     right: 100%;
 }
 
-.offcanvas-body ul li a.nav-link.active i.about::before{
-    visibility: visible;
-    width: 115px;
-    right: 100%;
-}
-
-.offcanvas-body ul li a.nav-link.active i.good::before{
-    visibility: visible;
-    width: 115px;
-    right: 100%;
-}
-
-.offcanvas-body ul li a.nav-link.active i.service::before{
+.offcanvas-body ul li a.nav-link.active i.service::before {
     visibility: visible;
     width: 115px;
     right: 100%;
