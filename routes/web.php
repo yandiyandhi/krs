@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\NavbarController;
-use App\Http\Controllers\navcontroller;
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use App\Models\Goodnews;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\navcontroller;
+use App\Http\Controllers\NavbarController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\GoodnewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +23,7 @@ use App\Models\Goodnews;
 
 Route::get('/', [NavbarController::class, 'home']);
 Route::get('/blog', [NavbarController::class, 'blog']);
-Route::get('/goodnews', [NavbarController::class, 'goodnews']);
+Route::get('/goodnews', [GoodnewsController::class, 'goodnews']);
 Route::get('/service', [NavbarController::class, 'service']);
 Route::get('/about', [NavbarController::class, 'about']);
 Route::get('/dashboard', function () {
