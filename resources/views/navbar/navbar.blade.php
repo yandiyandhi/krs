@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+{{-- <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
         <a class="navbar-brand" href="/">
             <div style="max-height: 80px; max-width: 180px; overflow:hidden;">
@@ -142,4 +142,237 @@
                 </ul>
             </div>
         </div>
-</nav>
+</nav> --}}
+
+ <!-- Begin alert -->
+ <div class="container">
+    <div class="alert alert-primary active" id="alertSuggestion">
+        <div class="alert-content">
+            <p>Welcome to Koorsus | Mari Belajar, Berkembang dan Bertumbuh bersama Koorsus</p>
+            <a href="#" class="btn btn-dark" target="_blank">Join Now</a>
+        </div>
+        <button class="btn btn-close" id="closeAlertSuggestion"><i class="ri-close-line"></i></button>
+    </div>
+</div>
+
+<!-- End alert -->
+
+<!-- Begin base navbar -->
+
+<div class="container">
+    <div class="base-navbar flex">
+        <div class="menu" id="baseNavbar">
+            <ul class="list">
+                <li class="list-item"><a href="#" class="list-link">About</a></li>
+                <li class="list-item"><a href="#" class="list-link">Contact Us</a></li>
+                <li class="list-item"><a href="#" class="list-link">Login / Register</a></li>
+            </ul>
+        </div>
+        <div class="anothers-list flex">
+            <div class="font-size-btns flex">
+                <button class="btn btn-font-size" id="minimize">A-</button>
+                <button class="btn btn-font-size active" id="normal">A</button>
+                <button class="btn btn-font-size" id="maximize">A+</button>
+            </div>
+            <div class="change-theme flex">
+                <button class="btn btn-theme active" id="sun"><i class="ri-sun-line"></i></button>
+                <button class="btn btn-theme" id="moon"><i class="ri-moon-line"></i></button>
+            </div>
+            <ul class="list social-list flex">
+                <li class="list-item"><a href="https://www.facebook.com/koorsus" class="list-link" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.tiktok.com/@koorsus" class="list-link" target="_blank"><i class="ri-tiktok-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.linkedin.com/company/koorsus" class="list-link" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.youtube.com/@koorsus" class="list-link" target="_blank"><i class="ri-youtube-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.instagram.com/koorsus/" class="list-link" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                <li class="list-item"><a href="https://t.me/+UZSIYDmXxXA4ZTg1" class="list-link" target="_blank"><i class="ri-telegram-fill"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="clear">
+        <hr>
+    </div>
+</div>
+<!-- End Base navbard -->
+
+<!-- Begin navbar -->
+<div class="container">
+    <div class="navbar flex" id="navbar">
+        <div class="logo flex">
+            <a href='/'><img src="/image/logobrand.png" alt="site" class="img img-top"></a>
+        </div>
+        <div class="list navbar-list">
+            <ul class="list">
+                <li class="list-item dropdown {{ $active === 'home' ? 'active' : '' }}">
+                    <a href="/" class="list-link {{ $active === 'home' ? 'active' : '' }}">Home</i></a>
+                </li>
+                <li class="list-item dropdown {{ $active === 'goodnews' ? 'active' : '' }}">
+                    <a href="/goodnews" class="list-link {{ $active === 'goodnews' ? 'active' : '' }}">Good News</a>
+                </li>
+                <li class="list-item dropdown lifestyle">
+                    <a href="#" class="list-link lifestyle">Blog <i class="ri-arrow-drop-down-line"></i></a>
+                    <div class="container">
+                        <div class="lifestyle-sections">
+                            <div class="last-posts">
+                                <div class="post">
+                                    <a href="#"><img src="/image/1.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
+                                    </a>
+                                    <span class="auther">joan wallace</span>. <span class="date">FEB 18,
+                                        2022</span>
+                                </div>
+                                <div class="post">
+                                    <a href="#"><img src="/image/2.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
+                                    </a>
+                                    <span class="auther">joan wallace</span>. <span class="date">FEB 18,
+                                        2022</span>
+                                </div>
+                                <div class="post">
+                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
+                                    </a>
+                                    <span class="auther">joan wallace</span>. <span class="date">FEB 18,
+                                        2022</span>
+                                </div>
+                                <div class="membership">
+                                    <span>Koorsus</span>
+                                    <h2>Permiun Membership</h2>
+                                    <span>Become a Member Today!</span>
+                                    <a href="#" class="link btn btn-plane">View pricing plans</a>
+                                </div>
+                            </div>
+                            <div class="trand-tags">
+                                <span>Tranding Tags: </span>
+                                <a href="#" class="link btn btn-tag btn-danger">Travel</a>
+                                <a href="#" class="link btn btn-tag btn-success">Business</a>
+                                <a href="#" class="link btn btn-tag btn-primary">Tech</a>
+                                <a href="#" class="link btn btn-tag btn-warning">Gadgets</a>
+                                <a href="#" class="link btn btn-tag btn-danger">Lifestyle</a>
+                                <a href="#" class="link btn btn-tag btn-success">Vaccine</a>
+                                <a href="#" class="link btn btn-tag btn-primary">Sports</a>
+                                <a href="#" class="link btn btn-tag btn-warning">Covid-19</a>
+                                <a href="#" class="link btn btn-tag btn-danger">Politice</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item dropdown lifestyle">
+                    <a href="#" class="list-link lifestyle">Learning <i class="ri-arrow-drop-down-line"></i></a>
+                    <div class="container">
+                        <div class="lifestyle-sections">
+                            <div class="last-posts">
+                                <div class="post">
+                                    <a href="#"><img src="/image/1.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">Google Spreadsheets</h2>
+                                    </a>
+                                </div>
+                                <div class="post">
+                                    <a href="#"><img src="/image/2.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">Coming Very Soon...</h2>
+                                    </a>
+                                </div>
+                                <div class="post">
+                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">Coming Very Soon...</h2>
+                                    </a>
+                                </div>
+                                <div class="post">
+                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#" class="link">
+                                        <h2 class="title">Coming Very Soon...</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item dropdown">
+                    <a href="#" class="list-link">Service</a>
+                </li>
+            </ul>
+        </div>
+        <div class="anothers-list flex">
+            <a href="https://www.youtube.com/@koorsus?sub_confirmation=1" target="_blank" class="btn btn-subscribe"><i class="ri-youtube-fill font-size-3 mr"></i>Subscribe!</a>
+            <button class="btn btn-navbar" id="navbarMenuBtn"><i class="ri-menu-fill"></i></button>
+            <button class="btn btn-search" id="search"><i class="ri-search-line"></i></button>
+            <div class="search" id="search-box">
+                <input type="search" class="search-input" placeholder="Search...">
+                <input type="submit" class="search-btn btn" value="Search">
+            </div>
+            <button class="btn btn-navbar" id="offcanvasMenu"><i class="ri-menu-3-fill"></i></button>
+        </div>
+    </div>
+</div>
+<!-- End navbar -->
+<!-- Begin offcanvas -->
+<div class="offcanvas" id="offcanvas">
+    <button class="btn btn-close" id="offcanvasClose"><i class="ri-close-line close"></i></button>
+    <div class="header">
+        <div class="title">
+            <a href="./index.html">
+                <img src="/image/logobrand.png" alt="" class="img">
+            </a>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorum numquam aperiam
+                quam
+                nihil in exercitationem laborum harum est delectus?</p>
+        </div>
+    </div>
+    <div class="body">
+        <ul class="list offcanvas-list">
+            <li class="list-item"><a href="./index.html" class="list-link">Home</a></li>
+            <li class="list-item"><a href="./about.html" class="list-link">About</a></li>
+            <li class="list-item"><a href="#" class="list-link">Blog</a></li>
+            <li class="list-item"><a href="./contact.html" class="list-link">Contact Us</a></li>
+        </ul>
+        <div class="membership">
+            <span>Koorsus</span>
+            <h2>Save on Premium Membership</h2>
+            <span class="content">Get the insights report trusted by experts around the globe. Become a Member
+                Today! lorem100</span>
+            <a href="#" class="btn btn-plane link">View pricing plans</a>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Ardabil, Azerbaijan(F1)</h3>
+        <p class="content">750 Sing Sing Rd, Horseheads, NY, 14845 Call: 469-537-2410 (Toll-free) </p>
+        <a href="mailto:test@mail.com" class="link">test@mail.com</a>
+    </div>
+</div>
+<div class="offcanvas offcanvas-navbar" id="offcanvasNavbar">
+    <button class="btn btn-close" id="offcanvasNavbarClose"><i class="ri-close-line close"></i></button>
+    <div class="body">
+        <ul class="list offcanvas-list">
+            <li class="list-item active">
+                <a href="./index.html" class="list-link sm-list-link active">Home</a>
+            </li>
+            <li class="list-item">
+                <a href="./posts.html" class="list-link sm-list-link">Post</a>
+            </li>
+            <li class="list-item">
+                <a href="#" class="list-link sm-list-link">Lifestyle</a>
+            </li>
+            <li class="list-item">
+                <a href="#" class="list-link sm-list-link">Dashboard</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="membership">
+            <span>The Blogzine!</span>
+            <h2>Permiun Membership</h2>
+            <span>Become a Member Today!</span>
+            <a href="#" class="btn btn-plane link">View pricing plans</a>
+        </div>
+    </div>
+</div>
+<!-- End offcanvas -->

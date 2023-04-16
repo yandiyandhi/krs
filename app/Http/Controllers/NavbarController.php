@@ -22,14 +22,6 @@ class NavbarController extends Controller
         ]);
     }
 
-    public function goodnews()
-    {
-        return view('goodnews', [
-            'title' => 'Good News',
-            'active' => 'goodnews',
-        ]);
-    }
-
     public function service()
     {
         return view('service', [

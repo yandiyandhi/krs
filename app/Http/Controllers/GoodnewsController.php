@@ -15,4 +15,13 @@ class GoodnewsController extends Controller
             'status' => 'goodback',
         ]);
     }
+
+    public function news()
+    {
+        return view('news', [
+            'title' => 'Good News',
+            'active' => 'goodnews',
+            'status' => 'goodback',
+        ]);
+    }
 }
