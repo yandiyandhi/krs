@@ -13,7 +13,9 @@ use App\Models\Goodnews;
 
 Route::get('/', [NavbarController::class, 'home']);
 Route::get('/blog', [NavbarController::class, 'blog']);
+
 Route::get('/goodnews', [GoodnewsController::class, 'goodnews']);
+
 Route::get('/news', [GoodnewsController::class, 'news']);
 // Route::get('/service', [NavbarController::class, 'service']);
 // Route::get('/about', [NavbarController::class, 'about']);

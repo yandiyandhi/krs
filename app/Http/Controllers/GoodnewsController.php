@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\GoodNews;
 use Illuminate\Http\Request;
 
 class GoodnewsController extends Controller
@@ -12,7 +14,7 @@ class GoodnewsController extends Controller
         return view('goodnews', [
             'title' => 'Good News',
             'active' => 'goodnews',
-            'status' => 'goodback',
+            'status' => GoodNews::with(['category'])->latest()->get()
         ]);
     }
 
@@ -24,4 +26,12 @@ class GoodnewsController extends Controller
             'status' => 'goodback',
         ]);
     }
+
+    // public function show () {
+    //     return view('post', [
+    //         "title" => "Single Post",
+    //         "active" => "Posts",
+    //         "post" => $post
+    //     ]);
+    // }
 }
