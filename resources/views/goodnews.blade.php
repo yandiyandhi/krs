@@ -68,30 +68,34 @@
                             </div>
                         </div>
                     </div> --}}
-
-                    {{-- Data NEw --}}
-                    <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/2.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            {{-- <span class="badge badge-danger"><i class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span> --}}
-                            <a href="/news" class="link-dark">{{ $status[0]->title }}</a>
-                            <p class="text-secondery">
-                                {{ $status[0]->excerpt }}
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                        class="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
+                    @if ($status->count())
+                        {{-- Data NEw --}}
+                        <div class="post-item">
+                            <div class="post-img">
+                                <a href="/goodnews/{{ $status[0]->slug }}">
+                                    <img src="https://source.unsplash.com/500x400?{{ $status[0]->category->name }}"
+                                        alt="image" class="img img-post">
+                                </a>
+                            </div>
+                            <div class="post-item-content">
+                                {{-- <span class="badge badge-danger"><i class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span> --}}
+                                <a href="/news" class="link-dark">{{ $status[0]->title }}</a>
+                                <p class="text-secondery">
+                                    {{ $status[0]->excerpt }}
+                                </p>
+                                <div class="slide-info">
+                                    <img src="/image/2.jpg" alt="auther image" class="img auther-img">
+                                    <span class="slide-info-item auther-name text-secondery">by <a href="#"
+                                            class="link-dark text-secondery font-size-2">Ali</a></span>
+                                    <span class="text-secondery">.</span>
+                                    <span
+                                        class="slide-info-item date-pub text-secondery">{{ $status[0]->created_at->diffForHumans() }}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
+                    @else
+                        <p class="text-center fs-4">No Post Found</p>
+                    @endif
 
                     <div class="post-item">
                         <div class="post-img">
