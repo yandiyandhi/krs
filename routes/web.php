@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\GoodnewsController;
+use App\Models\Goodnews;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
-use App\Models\Goodnews;
+use App\Http\Controllers\GoodnewsController;
+use App\Http\Controllers\DashboardController;
 
 
 // Route::get('/', function () {
@@ -22,6 +23,7 @@ Route::get('/goodnews/{news:slug}', [GoodnewsController::class, 'news']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

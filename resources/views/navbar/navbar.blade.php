@@ -165,7 +165,7 @@
             <ul class="list">
                 <li class="list-item"><a href="#" class="list-link">About</a></li>
                 <li class="list-item"><a href="#" class="list-link">Contact Us</a></li>
-                <li class="list-item"><a href="#" class="list-link">Login / Register</a></li>
+                <li class="list-item"><a href="/dashboard" class="list-link">Login / Register</a></li>
             </ul>
         </div>
         <div class="anothers-list flex">
