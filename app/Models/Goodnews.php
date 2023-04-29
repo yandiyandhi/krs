@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class GoodNews extends Model
 {
-    // use HasFactory;
+    use HasFactory;
 
     // yang tidak boleh diis
     protected $guarded = ['id'];
@@ -24,5 +24,10 @@ class GoodNews extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
