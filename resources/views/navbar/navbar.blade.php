@@ -144,8 +144,8 @@
         </div>
 </nav> --}}
 
-<!-- Begin alert -->
-<div class="container">
+ <!-- Begin alert -->
+ <div class="container">
     <div class="alert alert-primary active" id="alertSuggestion">
         <div class="alert-content">
             <p>Welcome to Koorsus | Mari Belajar, Berkembang dan Bertumbuh bersama Koorsus</p>
@@ -165,7 +165,7 @@
             <ul class="list">
                 <li class="list-item"><a href="#" class="list-link">About</a></li>
                 <li class="list-item"><a href="#" class="list-link">Contact Us</a></li>
-                <li class="list-item"><a href="/login" class="list-link">Login / Register</a></li>
+                <li class="list-item"><a href="#" class="list-link">Login / Register</a></li>
             </ul>
         </div>
         <div class="anothers-list flex">
@@ -179,18 +179,12 @@
                 <button class="btn btn-theme" id="moon"><i class="ri-moon-line"></i></button>
             </div>
             <ul class="list social-list flex">
-                <li class="list-item"><a href="https://www.facebook.com/koorsus" class="list-link" target="_blank"><i
-                            class="ri-facebook-box-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.tiktok.com/@koorsus" class="list-link" target="_blank"><i
-                            class="ri-tiktok-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.linkedin.com/company/koorsus" class="list-link"
-                        target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.youtube.com/@koorsus" class="list-link" target="_blank"><i
-                            class="ri-youtube-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.instagram.com/koorsus/" class="list-link" target="_blank"><i
-                            class="ri-instagram-fill"></i></a></li>
-                <li class="list-item"><a href="https://t.me/+UZSIYDmXxXA4ZTg1" class="list-link" target="_blank"><i
-                            class="ri-telegram-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.facebook.com/koorsus" class="list-link" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.tiktok.com/@koorsus" class="list-link" target="_blank"><i class="ri-tiktok-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.linkedin.com/company/koorsus" class="list-link" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.youtube.com/@koorsus" class="list-link" target="_blank"><i class="ri-youtube-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.instagram.com/koorsus/" class="list-link" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                <li class="list-item"><a href="https://t.me/+UZSIYDmXxXA4ZTg1" class="list-link" target="_blank"><i class="ri-telegram-fill"></i></a></li>
             </ul>
         </div>
     </div>
@@ -222,8 +216,7 @@
                         <div class="lifestyle-sections">
                             <div class="last-posts">
                                 <div class="post">
-                                    <a href="#"><img src="/image/1.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/1.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
                                     </a>
@@ -231,8 +224,7 @@
                                         2022</span>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/2.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/2.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
                                     </a>
@@ -240,8 +232,7 @@
                                         2022</span>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
                                     </a>
@@ -266,42 +257,35 @@
                                 <a href="#" class="link btn btn-tag btn-primary">Sports</a>
                                 <a href="#" class="link btn btn-tag btn-warning">Covid-19</a>
                                 <a href="#" class="link btn btn-tag btn-danger">Politice</a>
-                                {{-- <a href="#"
-                                    class="link btn btn-tag btn-danger">{{ $status[0]->category->name }}</a> --}}
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="list-item dropdown lifestyle">
-                    <a href="#" class="list-link lifestyle">Learning <i
-                            class="ri-arrow-drop-down-line"></i></a>
+                    <a href="#" class="list-link lifestyle">Learning <i class="ri-arrow-drop-down-line"></i></a>
                     <div class="container">
                         <div class="lifestyle-sections">
                             <div class="last-posts">
                                 <div class="post">
-                                    <a href="#"><img src="/image/1.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/1.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Google Spreadsheets</h2>
                                     </a>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/2.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/2.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Coming Very Soon...</h2>
                                     </a>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Coming Very Soon...</h2>
                                     </a>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Coming Very Soon...</h2>
                                     </a>
@@ -316,8 +300,7 @@
             </ul>
         </div>
         <div class="anothers-list flex">
-            <a href="https://www.youtube.com/@koorsus?sub_confirmation=1" target="_blank"
-                class="btn btn-subscribe"><i class="ri-youtube-fill font-size-3 mr"></i>Subscribe!</a>
+            <a href="https://www.youtube.com/@koorsus?sub_confirmation=1" target="_blank" class="btn btn-subscribe"><i class="ri-youtube-fill font-size-3 mr"></i>Subscribe!</a>
             <button class="btn btn-navbar" id="navbarMenuBtn"><i class="ri-menu-fill"></i></button>
             <button class="btn btn-search" id="search"><i class="ri-search-line"></i></button>
             <div class="search" id="search-box">
@@ -334,7 +317,7 @@
     <button class="btn btn-close" id="offcanvasClose"><i class="ri-close-line close"></i></button>
     <div class="header">
         <div class="title">
-            <a href="/">
+            <a href="./index.html">
                 <img src="/image/logobrand.png" alt="" class="img">
             </a>
         </div>
@@ -359,11 +342,11 @@
             <a href="#" class="btn btn-plane link">View pricing plans</a>
         </div>
     </div>
-    {{-- <div class="footer">
+    <div class="footer">
         <h3>Ardabil, Azerbaijan(F1)</h3>
         <p class="content">750 Sing Sing Rd, Horseheads, NY, 14845 Call: 469-537-2410 (Toll-free) </p>
         <a href="mailto:test@mail.com" class="link">test@mail.com</a>
-    </div> --}}
+    </div>
 </div>
 <div class="offcanvas offcanvas-navbar" id="offcanvasNavbar">
     <button class="btn btn-close" id="offcanvasNavbarClose"><i class="ri-close-line close"></i></button>

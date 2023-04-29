@@ -79,7 +79,7 @@
                             </div>
                             <div class="post-item-content">
                                 {{-- <span class="badge badge-danger"><i class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span> --}}
-                                <a href="/goodnews/{{ $status[0]->slug }}" class="link-dark">{{ $status[0]->title }}</a>
+                                <a href="/news" class="link-dark">{{ $status[0]->title }}</a>
                                 <p class="text-secondery">
                                     {{ $status[0]->excerpt }}
                                 </p>
