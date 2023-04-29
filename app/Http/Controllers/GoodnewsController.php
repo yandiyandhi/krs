@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 
 class GoodnewsController extends Controller
 {
+    public function home()
+    {
+        return view('home', [
+            'title' => 'Home',
+            'active' => 'home',
+            'status' => GoodNews::all()
+        ]);
+    }
 
     public function goodnews()
     {

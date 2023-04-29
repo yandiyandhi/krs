@@ -12,7 +12,7 @@ use App\Http\Controllers\DashboardController;
 //     return view('home');
 // });
 
-Route::get('/', [NavbarController::class, 'home']);
+Route::get('/', [GoodnewsController::class, 'home']);
 Route::get('/blog', [NavbarController::class, 'blog']);
 
 Route::get('/goodnews', [GoodnewsController::class, 'goodnews']);
