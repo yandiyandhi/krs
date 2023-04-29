@@ -9,37 +9,29 @@ use Illuminate\Http\Request;
 class GoodnewsController extends Controller
 {
 
-    public function goodnews()
+    public function goodnews(Request $request)
     {
 
-        $title = '';
         if (request('category')) {
             $category = Category::firstWhere('slug', request('category'));
-            $title = ' in ' . $category->name;
         }
 
         return view('goodnews', [
-            'title' => 'Good News' . $title,
+            'title' => 'Good News',
             'active' => 'goodnews',
             // 'status' => GoodNews::with(['category'])->latest()->get()->paginate(7)->withQueryString()            
             'status' => GoodNews::latest()->Filter(request(['category']))->paginate(7)->withQueryString()
+            // 'status' => GoodNews::all()
         ]);
     }
 
     public function news(GoodNews $news)
     {
+
         return view('news', [
             'title' => 'Good News',
             'active' => 'goodnews',
-            'news' => $news,
+            'status' => $news
         ]);
     }
-
-    // public function show () {
-    //     return view('post', [
-    //         "title" => "Single Post",
-    //         "active" => "Posts",
-    //         "post" => $post
-    //     ]);
-    // }
 }

@@ -33,7 +33,8 @@
     <div class="container">
         <div class="slide">
             <div class="slide-item first-slide">
-                <a href="./single-post.html" class="slide-img-box"><img src="/image/2.jpg" alt="image" class="img slide-img"></a>
+                <a href="./single-post.html" class="slide-img-box"><img src="/image/2.jpg" alt="image"
+                        class="img slide-img"></a>
                 <div class="slide-header">
                     <span class="slide-tag badge-danger"><i class="ri-checkbox-blank-circle-fill"></i>Lifestyle</span>
                 </div>
@@ -45,7 +46,8 @@
                 <div class="slide-footer">
                     <div class="slide-info">
                         <img src="/image/3.jpg" alt="auther image" class="img auther-img">
-                        <span class="slide-info-item auther-name">by <a href="#" class="link text-white">Ali</a></span>.
+                        <span class="slide-info-item auther-name">by <a href="#"
+                                class="link text-white">Ali</a></span>.
                         <span class="slide-info-item date-pub">nov 15, 2022</span>.
                         <span class="slide-info-item read-time">5 min read</span>
                     </div>
@@ -53,7 +55,8 @@
             </div>
             <div class="second-slide">
                 <div class="slide-item sec-slide">
-                    <a href="./single-post.html" class="slide-img-box"><img src="/image/1.jpg" alt="image" class="img slide-img"></a>
+                    <a href="./single-post.html" class="slide-img-box"><img src="/image/1.jpg" alt="image"
+                            class="img slide-img"></a>
                     <div class="slide-header">
                         <span class="slide-tag badge-primary"><i class="ri-checkbox-blank-circle-fill"></i>Sport</span>
                     </div>
@@ -70,13 +73,15 @@
                 </div>
                 <div class="third-slide">
                     <div class="slide-item last-slide">
-                        <a href="./single-post.html" class="slide-img-box"><img src="/image/3.jpg" alt="image" class="img slide-img"></a>
+                        <a href="./single-post.html" class="slide-img-box"><img src="/image/3.jpg" alt="image"
+                                class="img slide-img"></a>
                         <div class="slide-header">
                             <span class="slide-tag badge-warning"><i
                                     class="ri-checkbox-blank-circle-fill"></i>Technology</span>
                         </div>
                         <div class="slide-body">
-                            <a href="./single-post.html" class="link">Ten tell-tale signs you need to get a new startup.</a>
+                            <a href="./single-post.html" class="link">Ten tell-tale signs you need to get a new
+                                startup.</a>
                         </div>
                         <div class="slide-footer">
                             <div class="slide-info">
@@ -87,13 +92,15 @@
                         </div>
                     </div>
                     <div class="slide-item last-slide">
-                        <a href="./single-post.html" class="slide-img-box"><img src="/image/4.jpg" alt="image" class="img slide-img"></a>
+                        <a href="./single-post.html" class="slide-img-box"><img src="/image/4.jpg" alt="image"
+                                class="img slide-img"></a>
                         <div class="slide-header">
                             <span class="slide-tag badge-success"><i
                                     class="ri-checkbox-blank-circle-fill"></i>Business</span>
                         </div>
                         <div class="slide-body">
-                            <a href="./single-post.html" class="link">Ten tell-tale signs you need to get a new startup.</a>
+                            <a href="./single-post.html" class="link">Ten tell-tale signs you need to get a new
+                                startup.</a>
                         </div>
                         <div class="slide-footer">
                             <div class="slide-info">
@@ -124,7 +131,8 @@
                             <a href="./single-post.html">
                                 <img src="/image/3.jpg" alt="image" class="img img-highlights">
                             </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow on
+                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
+                                on
                                 Twitter</a>
                             <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
                                 Devonshire difficulty gay
@@ -141,7 +149,8 @@
                             <a href="./single-post.html">
                                 <img src="/image/2.jpg" alt="image" class="img img-highlights">
                             </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow on
+                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
+                                on
                                 Twitter</a>
                             <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
                                 Devonshire difficulty gay
@@ -158,7 +167,8 @@
                             <a href="./single-post.html">
                                 <img src="/image/1.jpg" alt="image" class="img img-highlights">
                             </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow on
+                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
+                                on
                                 Twitter</a>
                             <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
                                 Devonshire difficulty gay
@@ -175,7 +185,8 @@
                             <a href="./single-post.html">
                                 <img src="/image/3.jpg" alt="image" class="img img-highlights">
                             </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow on
+                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
+                                on
                                 Twitter</a>
                             <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
                                 Devonshire difficulty gay

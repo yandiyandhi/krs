@@ -1,7 +1,10 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\GoodNews;
 use Illuminate\Http\Request;
 
 class NavbarController extends Controller
@@ -11,6 +14,7 @@ class NavbarController extends Controller
         return view('home', [
             'title' => 'Home',
             'active' => 'home',
+            'status' => Category::all()
         ]);
     }
 

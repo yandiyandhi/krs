@@ -15,11 +15,11 @@
                                         href="#" class="text-white">Photography</a></i></span>
                         </div>
                         <div class="single-post-title">
-                            <h1 class="text-white">{{ $news->title }}</h1>
+                            <h1 class="text-white">{{ $status->title }}</h1>
                         </div>
                         <div class="single-post-min-description">
                             <p class="text-white">
-                                {{ $news->excerpt }}
+                                {{ $status->excerpt }}
                             </p>
                         </div>
                         <div class="slide-info">
@@ -28,7 +28,7 @@
                                     class="link text-white font-size-2">Hilman</a></span>
                             <span class="text-white">.</span>
                             <span
-                                class="slide-info-item date-pub text-white">{{ $news->created_at->diffForHumans() }}</span>
+                                class="slide-info-item date-pub text-white">{{ $status->created_at->diffForHumans() }}</span>
                             <span class="text-white">.</span>
                             <span class="slide-info-item date-pub text-white">5 min read</span>
                             <span class="text-white">.</span>
@@ -60,14 +60,14 @@
             <div class="single-post-body">
                 <div class="left-nav">
                     <p class="text-content">
-                        {{ $news->body }}
+                        {{ $status->body }}
                     </p>
                     <div class="gallery">
-                        <img src="https://source.unsplash.com/500x400?{{ $news->category->name }}" alt="image"
+                        <img src="https://source.unsplash.com/500x400?{{ $status->category->name }}" alt="image"
                             class="img gallery-img">
-                        <img src="https://source.unsplash.com/500x400?{{ $news->category->name }}" alt="image"
+                        <img src="https://source.unsplash.com/500x400?{{ $status->category->name }}" alt="image"
                             class="img gallery-img">
-                        <img src="https://source.unsplash.com/500x400?{{ $news->category->name }}" alt="image"
+                        <img src="https://source.unsplash.com/500x400?{{ $status->category->name }}" alt="image"
                             class="img gallery-img">
                     </div>
                     <p class="text-content">
