@@ -144,8 +144,8 @@
         </div>
 </nav> --}}
 
- <!-- Begin alert -->
- <div class="container">
+<!-- Begin alert -->
+<div class="container">
     <div class="alert alert-primary active" id="alertSuggestion">
         <div class="alert-content">
             <p>Welcome to Koorsus | Mari Belajar, Berkembang dan Bertumbuh bersama Koorsus</p>
@@ -179,12 +179,18 @@
                 <button class="btn btn-theme" id="moon"><i class="ri-moon-line"></i></button>
             </div>
             <ul class="list social-list flex">
-                <li class="list-item"><a href="https://www.facebook.com/koorsus" class="list-link" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.tiktok.com/@koorsus" class="list-link" target="_blank"><i class="ri-tiktok-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.linkedin.com/company/koorsus" class="list-link" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.youtube.com/@koorsus" class="list-link" target="_blank"><i class="ri-youtube-fill"></i></a></li>
-                <li class="list-item"><a href="https://www.instagram.com/koorsus/" class="list-link" target="_blank"><i class="ri-instagram-fill"></i></a></li>
-                <li class="list-item"><a href="https://t.me/+UZSIYDmXxXA4ZTg1" class="list-link" target="_blank"><i class="ri-telegram-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.facebook.com/koorsus" class="list-link" target="_blank"><i
+                            class="ri-facebook-box-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.tiktok.com/@koorsus" class="list-link" target="_blank"><i
+                            class="ri-tiktok-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.linkedin.com/company/koorsus" class="list-link"
+                        target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.youtube.com/@koorsus" class="list-link" target="_blank"><i
+                            class="ri-youtube-fill"></i></a></li>
+                <li class="list-item"><a href="https://www.instagram.com/koorsus/" class="list-link" target="_blank"><i
+                            class="ri-instagram-fill"></i></a></li>
+                <li class="list-item"><a href="https://t.me/+UZSIYDmXxXA4ZTg1" class="list-link" target="_blank"><i
+                            class="ri-telegram-fill"></i></a></li>
             </ul>
         </div>
     </div>
@@ -216,7 +222,8 @@
                         <div class="lifestyle-sections">
                             <div class="last-posts">
                                 <div class="post">
-                                    <a href="#"><img src="/image/1.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/1.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
                                     </a>
@@ -224,7 +231,8 @@
                                         2022</span>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/2.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/2.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
                                     </a>
@@ -232,7 +240,8 @@
                                         2022</span>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/3.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
                                     </a>
@@ -248,44 +257,44 @@
                             </div>
                             <div class="trand-tags">
                                 <span>Tranding Tags: </span>
-                                <a href="#" class="link btn btn-tag btn-danger">Travel</a>
-                                <a href="#" class="link btn btn-tag btn-success">Business</a>
-                                <a href="#" class="link btn btn-tag btn-primary">Tech</a>
-                                <a href="#" class="link btn btn-tag btn-warning">Gadgets</a>
-                                <a href="#" class="link btn btn-tag btn-danger">Lifestyle</a>
-                                <a href="#" class="link btn btn-tag btn-success">Vaccine</a>
-                                <a href="#" class="link btn btn-tag btn-primary">Sports</a>
-                                <a href="#" class="link btn btn-tag btn-warning">Covid-19</a>
-                                <a href="#" class="link btn btn-tag btn-danger">Politice</a>
+                                @foreach ($nav as $navs)
+                                    <a href="#" class="link btn btn-tag btn-danger">{{ $navs->name }}
+                                    </a>
+                                @endforeach
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="list-item dropdown lifestyle">
-                    <a href="#" class="list-link lifestyle">Learning <i class="ri-arrow-drop-down-line"></i></a>
+                    <a href="#" class="list-link lifestyle">Learning <i
+                            class="ri-arrow-drop-down-line"></i></a>
                     <div class="container">
                         <div class="lifestyle-sections">
                             <div class="last-posts">
                                 <div class="post">
-                                    <a href="#"><img src="/image/1.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/1.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Google Spreadsheets</h2>
                                     </a>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/2.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/2.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Coming Very Soon...</h2>
                                     </a>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/3.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Coming Very Soon...</h2>
                                     </a>
                                 </div>
                                 <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image" class="img img-lifestyle"></a>
+                                    <a href="#"><img src="/image/3.jpg" alt="image"
+                                            class="img img-lifestyle"></a>
                                     <a href="#" class="link">
                                         <h2 class="title">Coming Very Soon...</h2>
                                     </a>
@@ -300,7 +309,8 @@
             </ul>
         </div>
         <div class="anothers-list flex">
-            <a href="https://www.youtube.com/@koorsus?sub_confirmation=1" target="_blank" class="btn btn-subscribe"><i class="ri-youtube-fill font-size-3 mr"></i>Subscribe!</a>
+            <a href="https://www.youtube.com/@koorsus?sub_confirmation=1" target="_blank"
+                class="btn btn-subscribe"><i class="ri-youtube-fill font-size-3 mr"></i>Subscribe!</a>
             <button class="btn btn-navbar" id="navbarMenuBtn"><i class="ri-menu-fill"></i></button>
             <button class="btn btn-search" id="search"><i class="ri-search-line"></i></button>
             <div class="search" id="search-box">

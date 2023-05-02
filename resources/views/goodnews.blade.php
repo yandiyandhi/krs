@@ -42,32 +42,6 @@
             </div>
             <div class="post-body">
                 <div class="post-item-list">
-                    {{-- <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/3.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            <span class="badge badge-danger"><i
-                                    class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span>
-                            <a href="/news" class="link-dark">The pros and cons of business agency</a>
-                            <p class="text-secondery">
-                                Pleasure and so read the was hope entire first decided the so must have as on was want
-                                up of I will rival in came this touched got a physics to travelling so all especially
-                                refinement monstrous desk they was arrange the overall helplessly out of particularly
-                                ill are purer Person she control of to beginnings view looked eyes Than continues its
-                                and because
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a
-                                        href="#"vclass="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
-                            </div>
-                        </div>
-                    </div> --}}
                     @if ($status->count())
                         {{-- Data NEw --}}
                         <div class="post-item">
@@ -79,14 +53,17 @@
                             </div>
                             <div class="post-item-content">
                                 {{-- <span class="badge badge-danger"><i class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span> --}}
-                                <a href="/news" class="link-dark">{{ $status[0]->title }}</a>
+                                <a href="/goodnews/{{ $status[0]->slug }}" class="link-dark">{{ $status[0]->title }}</a>
                                 <p class="text-secondery">
                                     {{ $status[0]->excerpt }}
                                 </p>
                                 <div class="slide-info">
                                     <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                    <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                            class="link-dark text-secondery font-size-2">Ali</a></span>
+                                    <span class="slide-info-item auther-name text-secondery">by
+                                        <a href="#"
+                                            class="link-dark text-secondery font-size-4 fw-normal">{{ $status[0]->author->name }}
+                                        </a>
+                                    </span>
                                     <span class="text-secondery">.</span>
                                     <span
                                         class="slide-info-item date-pub text-secondery">{{ $status[0]->created_at->diffForHumans() }}</span>

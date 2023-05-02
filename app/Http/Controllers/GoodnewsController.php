@@ -13,24 +13,20 @@ class GoodnewsController extends Controller
         return view('home', [
             'title' => 'Home',
             'active' => 'home',
-            'status' => GoodNews::all()
+            'nav' => Category::orderBy('name', 'asc')->get(),
+            'status' => GoodNews::latest()->paginate(4)
         ]);
     }
 
     public function goodnews()
     {
 
-        $title = '';
-        if (request('category')) {
-            $category = Category::firstWhere('slug', request('category'));
-            $title = ' in ' . $category->name;
-        }
-
         return view('goodnews', [
-            'title' => 'Good News' . $title,
+            'title' => 'Good News',
             'active' => 'goodnews',
-            // 'status' => GoodNews::with(['category'])->latest()->get()->paginate(7)->withQueryString()            
-            'status' => GoodNews::latest()->Filter(request(['category']))->paginate(7)->withQueryString()
+            'nav' => Category::get(),
+            // 'status' => GoodNews::latest()->Filter(request(['category']))->paginate(7)->withQueryString()
+            'status' => GoodNews::latest()->get()
         ]);
     }
 
@@ -39,7 +35,8 @@ class GoodnewsController extends Controller
         return view('news', [
             'title' => 'Good News',
             'active' => 'goodnews',
-            'news' => $news,
+            'nav' => Category::get(),
+            'news' => $news
         ]);
     }
 

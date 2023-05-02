@@ -25,7 +25,7 @@
                         <div class="slide-info">
                             <img src="/image/2.jpg" alt="auther image" class="img auther-img">
                             <span class="slide-info-item auther-name text-white">by <a href="#"
-                                    class="link text-white font-size-2">Hilman</a></span>
+                                    class="link text-white font-size-2">{{ $news->author->name }}</a></span>
                             <span class="text-white">.</span>
                             <span
                                 class="slide-info-item date-pub text-white">{{ $news->created_at->diffForHumans() }}</span>
@@ -60,7 +60,7 @@
             <div class="single-post-body">
                 <div class="left-nav">
                     <p class="text-content">
-                        {{ $news->body }}
+                        {!! $news->body !!}
                     </p>
                     <div class="gallery">
                         <img src="https://source.unsplash.com/500x400?{{ $news->category->name }}" alt="image"

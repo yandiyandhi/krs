@@ -30,7 +30,7 @@
 
     <!-- Begin Sldier -->
     {{-- {{ dd($status) }} --}}
-    {{-- {{ $status }} --}}
+    {{-- {{ $status[0]->category->name }} --}}
     <div class="container">
         <div class="slide">
             <div class="slide-item first-slide">
@@ -126,110 +126,7 @@
                 <span class="text-secondery">Latest breaking news, pictures, videos, and special reports</span>
             </div>
             <div class="sections">
-                <div class="left-nav">
-                    <div class="posts">
-
-                        @foreach ($status as $key)
-                            <div class="post">
-                                <a href="./single-post.html">
-                                    <img src="https://source.unsplash.com/500x400?{{ $key->category->name }}"
-                                        alt="image" class="img img-highlights">
-                                </a>
-                                <a href="./single-post.html" class="link-dark">{{ $key->title }}</a>
-                                <p class="content">{{ $key->slug }}</p>
-                                <div class="slide-info">
-                                    <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                    <small class="text-muted">
-                                        <span class="slide-info-item auther-name">by
-                                            <a href="#"
-                                                class="link-dark text-white font-size-2">{{ $key->author->name }}</a>
-                                        </span>.
-                                        <span
-                                            class="slide-info-item date-pub">{{ $key->created_at->diffForHumans() }}</span>
-                                    </small>
-                                </div>
-                            </div>
-                        @endforeach
-
-
-
-                        <div class="post">
-                            <a href="./single-post.html">
-                                <img src="/image/3.jpg" alt="image" class="img img-highlights">
-                            </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
-                                on
-                                Twitter</a>
-                            <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
-                                Devonshire difficulty gay
-                                assistance joy. Unaffected at ye of compliment alteration to</p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name">by <a href="#"
-                                        class="link-dark text-white font-size-2">Ali</a></span>.
-                                <span class="slide-info-item date-pub">may 03, 2022</span>.
-                                <span class="slide-info-item read-time">5 min read</span>
-                            </div>
-                        </div>
-                        <div class="post">
-                            <a href="./single-post.html">
-                                <img src="/image/2.jpg" alt="image" class="img img-highlights">
-                            </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
-                                on
-                                Twitter</a>
-                            <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
-                                Devonshire difficulty gay
-                                assistance joy. Unaffected at ye of compliment alteration to</p>
-                            <div class="slide-info">
-                                <img src="/image/3.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name">by <a href="#"
-                                        class="link-dark text-white font-size-2">Ali</a></span>.
-                                <span class="slide-info-item date-pub">apr 05, 2022</span>.
-                                <span class="slide-info-item read-time">5 min read</span>
-                            </div>
-                        </div>
-                        <div class="post">
-                            <a href="./single-post.html">
-                                <img src="/image/1.jpg" alt="image" class="img img-highlights">
-                            </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
-                                on
-                                Twitter</a>
-                            <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
-                                Devonshire difficulty gay
-                                assistance joy. Unaffected at ye of compliment alteration to</p>
-                            <div class="slide-info">
-                                <img src="/image/1.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name">by <a href="#"
-                                        class="link-dark text-white font-size-2">Ali</a></span>.
-                                <span class="slide-info-item date-pub">jun 10, 2022</span>.
-                                <span class="slide-info-item read-time">5 min read</span>
-                            </div>
-                        </div>
-                        <div class="post">
-                            <a href="./single-post.html">
-                                <img src="/image/3.jpg" alt="image" class="img img-highlights">
-                            </a>
-                            <a href="./single-post.html" class="link-dark">12 worst types of business accounts you follow
-                                on
-                                Twitter</a>
-                            <p class="content">He moonlights difficult engrossed it, sportsmen. Interested has all
-                                Devonshire difficulty gay
-                                assistance joy. Unaffected at ye of compliment alteration to</p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name">by <a href="#"
-                                        class="link-dark text-white font-size-2">Ali</a></span>.
-                                <span class="slide-info-item date-pub">nov 15, 2022</span>.
-                                <span class="slide-info-item read-time">5 min read</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="load-more">
-                        <a href="#" class="load-btn">Load more post <i class="ri-arrow-down-circle-line"></i></a>
-                    </div>
-                </div>
+                <livewire:content></livewire:content>
                 <div class="right-nav">
                     <div class="socials-info">
                         <a href="#" class="social-section facebook">
