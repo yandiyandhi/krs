@@ -44,165 +44,36 @@
                 <div class="post-item-list">
                     @if ($status->count())
                         {{-- Data NEw --}}
-                        <div class="post-item">
-                            <div class="post-img">
-                                <a href="/goodnews/{{ $status[0]->slug }}">
-                                    <img src="https://source.unsplash.com/500x400?{{ $status[0]->category->name }}"
-                                        alt="image" class="img img-post">
-                                </a>
-                            </div>
-                            <div class="post-item-content">
-                                {{-- <span class="badge badge-danger"><i class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span> --}}
-                                <a href="/goodnews/{{ $status[0]->slug }}" class="link-dark">{{ $status[0]->title }}</a>
-                                <p class="text-secondery">
-                                    {{ $status[0]->excerpt }}
-                                </p>
-                                <div class="slide-info">
-                                    <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                    <span class="slide-info-item auther-name text-secondery">by
-                                        <a href="#"
-                                            class="link-dark text-secondery font-size-4 fw-normal">{{ $status[0]->author->name }}
-                                        </a>
-                                    </span>
-                                    <span class="text-secondery">.</span>
-                                    <span
-                                        class="slide-info-item date-pub text-secondery">{{ $status[0]->created_at->diffForHumans() }}</span>
+                        @foreach ($status as $stat)
+                            <div class="post-item">
+                                <div class="post-img">
+                                    <a href="/goodnews/{{ $stat->slug }}">
+                                        <img src="https://source.unsplash.com/500x400?{{ $stat->category->name }}"
+                                            alt="image" class="img img-post">
+                                    </a>
+                                </div>
+                                <div class="post-item-content">
+                                    <a href="/goodnews/{{ $stat->slug }}" class="link-dark">{{ $stat->title }}</a>
+                                    <p class="text-secondery">
+                                        {{ $stat->excerpt }}
+                                    </p>
+                                    <div class="slide-info">
+                                        <img src="/image/2.jpg" alt="auther image" class="img auther-img">
+                                        <span class="slide-info-item auther-name text-secondery">by
+                                            <a href="#" class="link-dark text-secondery"
+                                                style="font-size: 16px !important;">{{ $stat->author->name }}
+                                            </a>
+                                        </span>
+                                        <span class="text-secondery">.</span>
+                                        <span
+                                            class="slide-info-item date-pub text-secondery">{{ $stat->created_at->diffForHumans() }}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     @else
                         <p class="text-center fs-4">No Post Found</p>
                     @endif
-
-                    <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/2.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            {{-- <span class="badge badge-danger"><i class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span> --}}
-                            <a href="/news" class="link-dark">The pros and cons of business agency</a>
-                            <p class="text-secondery">
-                                Pleasure and so read the was hope entire first decided the so must have as on was want
-                                up of I will rival in came this touched got a physics to travelling so all especially
-                                refinement monstrous desk they was arrange the overall helplessly out of particularly
-                                ill are purer Person she control of to beginnings view looked eyes Than continues its
-                                and because
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                        class="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/1.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            <span class="badge badge-danger"><i
-                                    class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span>
-                            <a href="/news" class="link-dark">The pros and cons of business agency</a>
-                            <p class="text-secondery">
-                                Pleasure and so read the was hope entire first decided the so must have as on was want
-                                up of I will rival in came this touched got a physics to travelling so all especially
-                                refinement monstrous desk they was arrange the overall helplessly out of particularly
-                                ill are purer Person she control of to beginnings view looked eyes Than continues its
-                                and because
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                        class="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/4.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            <span class="badge badge-danger"><i
-                                    class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span>
-                            <a href="/news" class="link-dark">The pros and cons of business agency</a>
-                            <p class="text-secondery">
-                                Pleasure and so read the was hope entire first decided the so must have as on was want
-                                up of I will rival in came this touched got a physics to travelling so all especially
-                                refinement monstrous desk they was arrange the overall helplessly out of particularly
-                                ill are purer Person she control of to beginnings view looked eyes Than continues its
-                                and because
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                        class="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/3.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            <span class="badge badge-danger"><i
-                                    class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span>
-                            <a href="/news" class="link-dark">The pros and cons of business agency</a>
-                            <p class="text-secondery">
-                                Pleasure and so read the was hope entire first decided the so must have as on was want
-                                up of I will rival in came this touched got a physics to travelling so all especially
-                                refinement monstrous desk they was arrange the overall helplessly out of particularly
-                                ill are purer Person she control of to beginnings view looked eyes Than continues its
-                                and because
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                        class="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="post-img">
-                            <a href="/news">
-                                <img src="/image/1.jpg" alt="image" class="img img-post">
-                            </a>
-                        </div>
-                        <div class="post-item-content">
-                            <span class="badge badge-danger"><i
-                                    class="ri-checkbox-blank-circle-fill mr"></i>Lifestyle</span>
-                            <a href="/news" class="link-dark">The pros and cons of business agency</a>
-                            <p class="text-secondery">
-                                Pleasure and so read the was hope entire first decided the so must have as on was want
-                                up of I will rival in came this touched got a physics to travelling so all especially
-                                refinement monstrous desk they was arrange the overall helplessly out of particularly
-                                ill are purer Person she control of to beginnings view looked eyes Than continues its
-                                and because
-                            </p>
-                            <div class="slide-info">
-                                <img src="/image/2.jpg" alt="auther image" class="img auther-img">
-                                <span class="slide-info-item auther-name text-secondery">by <a href="#"
-                                        class="link-dark text-secondery font-size-2">Ali</a></span>
-                                <span class="text-secondery">.</span>
-                                <span class="slide-info-item date-pub text-secondery">nov 15, 2022</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="right-nav">
                     <div class="trend-topic">
@@ -243,61 +114,35 @@
                     </div>
                     <div class="recent-posts">
                         <h2 class="trend-title">Recent post</h2>
-                        <div class="recent-post">
-                            <a href="/news">
-                                <img src="/image/3.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="/news" class="link-dark font-size-2">
-                                    The pros and cons of business agency
+                        @foreach ($rec as $sta)
+                            <div class="recent-post">
+                                <a href="#">
+                                    <img src="https://source.unsplash.com/500x400?{{ $sta->category->name }}" alt="image"
+                                        class="img recent-img">
                                 </a>
-                                <span>may 01, 2022</span>
+                                <div class="recent-post-body">
+                                    <a href="#" class="link-dark font-size-2" style="font-size: 14px !important;">
+                                        {{ $sta->title }}
+                                    </a>
+                                    <span>{{ $sta->created_at->diffForHumans() }}</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="recent-post">
-                            <a href="/news">
-                                <img src="/image/1.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="/news" class="link-dark font-size-2">
-                                    The pros and cons of business agency
-                                </a>
-                                <span>nov 05, 2022</span>
-                            </div>
-                        </div>
-                        <div class="recent-post">
-                            <a href="/news">
-                                <img src="/image/2.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="/news" class="link-dark font-size-2">
-                                    The pros and cons of business agency
-                                </a>
-                                <span>jun 14, 2022</span>
-                            </div>
-                        </div>
-                        <div class="recent-post">
-                            <a href="/news">
-                                <img src="/image/4.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="/news" class="link-dark font-size-2">
-                                    The pros and cons of business agency
-                                </a>
-                                <span>apr 20, 2022</span>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
+
             <div class="pagination">
+                {{ $status->links() }}
+            </div>
+            {{-- <div class="pagination">
                 <a href="#" class="prev-page">
                     <i class="ri-arrow-left-circle-line"></i>
                 </a>
                 <a href="#" class="next-page">
                     <i class="ri-arrow-right-circle-line"></i>
                 </a>
-            </div>
+            </div> --}}
         </div>
     </div>
     <!-- End Post Items -->

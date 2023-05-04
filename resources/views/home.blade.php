@@ -181,52 +181,24 @@
                         </div>
                         <a href="#" class="trend-more">View all categories</a>
                     </div>
+
                     <div class="recent-posts">
                         <h2 class="trend-title">Recent post</h2>
-                        <div class="recent-post">
-                            <a href="#">
-                                <img src="/image/3.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="#" class="link-dark font-size-2">
-                                    The pros and cons of business agency
+                        @foreach ($status as $stat)
+                            <div class="recent-post">
+                                <a href="#">
+                                    <img src="https://source.unsplash.com/500x400?{{ $stat->category->name }}"
+                                        alt="image" class="img recent-img">
                                 </a>
-                                <span>may 01, 2022</span>
+                                <div class="recent-post-body">
+                                    <a href="#" class="link-dark font-size-2" style="font-size: 14px !important;">
+                                        {{ $stat->title }}
+                                    </a>
+                                    <span>{{ $stat->created_at->diffForHumans() }}</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="recent-post">
-                            <a href="#">
-                                <img src="/image/1.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="#" class="link-dark font-size-2">
-                                    The pros and cons of business agency
-                                </a>
-                                <span>nov 05, 2022</span>
-                            </div>
-                        </div>
-                        <div class="recent-post">
-                            <a href="#">
-                                <img src="/image/2.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="#" class="link-dark font-size-2">
-                                    The pros and cons of business agency
-                                </a>
-                                <span>jun 14, 2022</span>
-                            </div>
-                        </div>
-                        <div class="recent-post">
-                            <a href="#">
-                                <img src="/image/4.jpg" alt="image" class="img recent-img">
-                            </a>
-                            <div class="recent-post-body">
-                                <a href="#" class="link-dark font-size-2">
-                                    The pros and cons of business agency
-                                </a>
-                                <span>apr 20, 2022</span>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>

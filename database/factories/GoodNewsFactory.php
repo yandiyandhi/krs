@@ -25,7 +25,8 @@ class GoodNewsFactory extends Factory
                 ->map(fn ($p) => "<p>$p</p>")
                 ->implode(''),
             'user_id' => mt_rand(1, 5),
-            'category_id' => mt_rand(1, 5)
+            'category_id' => mt_rand(1, 5),
+            'views' => 0,
         ];
     }
 }

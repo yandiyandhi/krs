@@ -14,7 +14,8 @@
                     <img src="/image/2.jpg" alt="auther image" class="img auther-img">
                     <small class="text-muted">
                         <span class="slide-info-item auther-name">by
-                            <a href="#" class="link-dark font-size-3">{{ $cont->author->name }}</a>
+                            <a href="#" class="link-dark font-size-3"
+                                style="font-size: 14px !important;">{{ $cont->author->name }}</a>
                         </span>.
                         <span class="slide-info-item date-pub">{{ $cont->created_at->diffForHumans() }}</span>
                     </small>

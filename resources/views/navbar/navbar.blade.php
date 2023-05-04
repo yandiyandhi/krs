@@ -165,7 +165,7 @@
             <ul class="list">
                 <li class="list-item"><a href="#" class="list-link">About</a></li>
                 <li class="list-item"><a href="#" class="list-link">Contact Us</a></li>
-                <li class="list-item"><a href="/dashboard" class="list-link">Login / Register</a></li>
+                <li class="list-item"><a href="/login" class="list-link">Login / Register</a></li>
             </ul>
         </div>
         <div class="anothers-list flex">
@@ -221,33 +221,18 @@
                     <div class="container">
                         <div class="lifestyle-sections">
                             <div class="last-posts">
-                                <div class="post">
-                                    <a href="#"><img src="/image/1.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
-                                    <a href="#" class="link">
-                                        <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
-                                    </a>
-                                    <span class="auther">joan wallace</span>. <span class="date">FEB 18,
-                                        2022</span>
-                                </div>
-                                <div class="post">
-                                    <a href="#"><img src="/image/2.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
-                                    <a href="#" class="link">
-                                        <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
-                                    </a>
-                                    <span class="auther">joan wallace</span>. <span class="date">FEB 18,
-                                        2022</span>
-                                </div>
-                                <div class="post">
-                                    <a href="#"><img src="/image/3.jpg" alt="image"
-                                            class="img img-lifestyle"></a>
-                                    <a href="#" class="link">
-                                        <h2 class="title">7 common mistakes eveyone makes while traveling</h2>
-                                    </a>
-                                    <span class="auther">joan wallace</span>. <span class="date">FEB 18,
-                                        2022</span>
-                                </div>
+                                @foreach ($list as $stat)
+                                    <div class="post">
+                                        <a href="#"><img
+                                                src="https://source.unsplash.com/500x400?{{ $stat->category->name }}"
+                                                alt="image" class="img img-lifestyle"></a>
+                                        <a href="#" class="link">
+                                            <h2 class="title">{{ $stat->title }}</h2>
+                                        </a>
+                                        <span class="auther">{{ $stat->author->name }}</span>. <span
+                                            class="date">{{ $stat->created_at->diffForHumans() }}</span>
+                                    </div>
+                                @endforeach
                                 <div class="membership">
                                     <span>Koorsus</span>
                                     <h2>Permiun Membership</h2>
@@ -258,7 +243,7 @@
                             <div class="trand-tags">
                                 <span>Tranding Tags: </span>
                                 @foreach ($nav as $navs)
-                                    <a href="#" class="link btn btn-tag btn-danger">{{ $navs->name }}
+                                    <a href="#" class="link btn btn-tag btn-warning">{{ $navs->name }}
                                     </a>
                                 @endforeach
                             </div>
