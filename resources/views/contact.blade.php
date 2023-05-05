@@ -8,7 +8,7 @@
                 <div class="right-nav" style="width: 70%;">
                     <p>Informasi pemasangan iklan, partnership, dan kerja sama lainnya silahkan hubungi kami via email di
                         koorsus@koorsus.com</p>
-                    <p>Kami menerima saran dan masukan dari anda, untuk membangun website lokerkudotnet menjadi lebih baik
+                    <p>Kami menerima saran dan masukan dari anda, untuk membangun website koorsus menjadi lebih baik
                         lagi.</p>
                 </div>
             </div>
