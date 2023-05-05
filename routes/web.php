@@ -6,7 +6,7 @@ use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GoodnewsController;
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\ServiceController;
 
 // Route::get('/', function () {
 //     return view('home');
@@ -23,15 +23,23 @@ use App\Http\Controllers\DashboardController;
 // Route::get('/service', [NavbarController::class, 'service']);
 // Route::get('/about', [NavbarController::class, 'about']);
 
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
 Route::controller(GoodnewsController::class)->group(function () {
     Route::get('/', 'home');
     Route::get('/goodnews', 'goodnews');
     Route::get('/goodnews/{news:slug}', 'news');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::controller(ServiceController::class)->group(function () {
+    Route::get('/service', 'service');
+    Route::get('/about', 'about');
+    Route::get('/contactus', 'contact');
+    Route::get('/privacypolice', 'privacy');
+    Route::get('/terms', 'term');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard']);

@@ -163,8 +163,9 @@
     <div class="base-navbar flex">
         <div class="menu" id="baseNavbar">
             <ul class="list">
-                <li class="list-item"><a href="#" class="list-link">About</a></li>
-                <li class="list-item"><a href="#" class="list-link">Contact Us</a></li>
+                <li class="list-item"><a href="/about" class="list-link">About</a></li>
+                <li class="list-item"><a href="/contactus"
+                        class="list-link {{ $active === 'contact' ? 'active' : '' }}">Contact Us</a></li>
                 <li class="list-item"><a href="/login" class="list-link">Login / Register</a></li>
             </ul>
         </div>
